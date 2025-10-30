@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ellenorzo.controllers.index import index
+from ellenorzo.views import index_views, tanulo_views, tantargy_views, jegy_views
 
 urlpatterns = [
-    path('', index, name='index'),
+    path('', index_views.index, name='index'),
     path('admin/', admin.site.urls),
 ]
+3
